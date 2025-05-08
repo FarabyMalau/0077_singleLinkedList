@@ -87,6 +87,8 @@ public:
             START = START->next;
         else
             previous->next = current->next;
-            
+
+        delete current;
+        return true;
     }
 };
