@@ -111,3 +111,19 @@ public:
         }
     }
 };
+
+int main() {
+    LinkedList mhs;
+    int nim;
+    char ch;
+
+    do {
+        cout << "\nMenu:"
+             << "\n1. Menambahkan data ke dalam list"
+             << "\n2. Menghapus data dari dalam list"
+             << "\n3. Menampilkan semua data dalam list"
+             << "\n4. Mencari data dalam list"
+             << "\n5. Keluar"
+             << "\nMasukkan pilihan (1-5): ";
+        cin >> ch;
+
