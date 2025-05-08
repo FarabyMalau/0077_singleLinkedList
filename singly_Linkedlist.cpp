@@ -130,4 +130,16 @@ int main() {
             case '1':
                 mhs.addNode();
                 break;
+                case '2':
+                if (mhs.listEmpty()) {
+                    cout << "\nList Kosong\n";
+                    break;
+                }
+                cout << "\nMasukkan no mahasiswa yang akan dihapus: ";
+                cin >> nim;
+                if (mhs.deleteNode(nim))
+                    cout << "\nData dengan nomor mahasiswa " << nim << " berhasil dihapus.\n";
+                else
+                    cout << "\nData tidak ditemukan\n";
+                break;
 
